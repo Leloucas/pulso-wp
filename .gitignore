@@ -66,9 +66,12 @@ Thumbs.db
 !README.md
 !CHANGELOG.md
 !composer.json
+!package.json
+!package-lock.json
 
 # track these themes
 !wp-content/themes/pulsoe/
+wp-content/themes/pulsoe/dist
 
 # Logs
 logs

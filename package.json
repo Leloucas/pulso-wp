@@ -1,0 +1,40 @@
+{
+  "name": "pulsoe",
+  "version": "1.0.0",
+  "description": "Bolsa de trabajo en Hermosillo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-site",
+    "build": "webpack --config ./wp-content/themes/pulsoe/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leloucas/pulso-wp.git"
+  },
+  "keywords": [
+    "bolsa",
+    "trabajo",
+    "hermosillo"
+  ],
+  "author": "Lucas Gonzalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leloucas/pulso-wp/issues"
+  },
+  "homepage": "https://github.com/Leloucas/pulso-wp#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.5.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
