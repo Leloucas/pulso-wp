@@ -1,0 +1,79 @@
+section#carousel{
+  padding: 0;
+  margin: 0;
+}
+#carousel-banner{
+  position: relative;
+}
+
+#portfolio .portfolio-caption{
+  padding: 1px 6px;
+}
+
+#portfolio img{
+  width: 100%;
+}
+
+#portfolio .row:first-child{
+  margin-bottom: 36px;
+}
+
+#portfolio h4 {
+  letter-spacing: 0px;
+  margin-top: 8px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#portfolio .modal .modal-content .modal-header{
+  padding: 12px 24px 2px;
+}
+
+#portfolio .modal .modal-content .modal-body{
+  padding: 0px;
+}
+
+#portfolio .modal .modal-content .modal-body .modal-text{
+  margin: 10px 36px;
+  line-height: 1.4em;
+  font-size: 1.3em;
+}
+
+@media(min-width:992px){
+  section#carousel, #carousel-banner{
+    height: 640px;
+  }
+  .fixed-logo{
+    width: 50%;
+    top: 35%;
+  }
+}
+@media(min-width:768px) and (max-width:991px){
+  section#carousel, #carousel-banner{
+    height: 100%;
+  }
+  .fixed-logo{
+    width: 50%;
+    top: 190px;
+  }
+}
+
+@media(min-width: 577px) and (max-width: 767px){
+  section#carousel, #carousel-banner{
+    height: 442px;
+  }
+  .fixed-logo{
+    width: 65%;
+    top: 132px;
+  }
+}
+
+@media(max-width: 576px){
+  #carousel-banner{
+    display: none;
+  }
+  .fixed-logo{
+    width: 80%;
+    top: 70px;
+  }
+}
