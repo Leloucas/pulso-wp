@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "test-site",
-    "build": "webpack --config ./wp-content/themes/pulsoe/webpack.config.js"
+    "build": "webpack --config ./wp-content/themes/pulsoe/webpack.config.js",
+    "dev": "npm run development",
+    "development": "webpack --hide-modules --config ./wp-content/themes/pulsoe/webpack.config.js",
+    "development-full": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config ./wp-content/themes/pulsoe/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config ./wp-content/themes/pulsoe/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +30,9 @@
   },
   "homepage": "https://github.com/Leloucas/pulso-wp#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1",
+    "cross-env": "^7.0.2",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1"
   },
@@ -33,6 +42,7 @@
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
